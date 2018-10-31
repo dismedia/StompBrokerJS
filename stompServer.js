@@ -65,7 +65,7 @@ var StompServer = function (config) {
     ws.on('close', this.onDisconnect.bind(this, ws));
     ws.on('error', function (err) {
       this.conf.debug(err);
-      this.emit('error', err);
+      //this.emit('error', err);
     }.bind(this));
   }.bind(this));
 
